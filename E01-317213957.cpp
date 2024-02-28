@@ -7,10 +7,10 @@ float rojo, verde, azul = 0.0f;
 
 int main()
 {
-	//Inicialización de GLFW
+	//InicializaciÃ³n de GLFW
 	if (!glfwInit())
 	{
-		printf("Falló inicializar GLFW");
+		printf("FallÃ³ inicializar GLFW");
 		glfwTerminate();
 		return 1;
 	}
@@ -30,7 +30,7 @@ int main()
 		glfwTerminate();
 		return 1;
 	}
-	//Obtener tamaño de Buffer
+	//Obtener tamaÃ±o de Buffer
 	int BufferWidth, BufferHeight;
 	glfwGetFramebufferSize(mainWindow, &BufferWidth, &BufferHeight);
 
@@ -42,7 +42,7 @@ int main()
 
 	if (glewInit() != GLEW_OK)
 	{
-		printf("Falló inicialización de GLEW");
+		printf("FallÃ³ inicializaciÃ³n de GLEW");
 		glfwDestroyWindow(mainWindow);
 		glfwTerminate();
 		return 1;
